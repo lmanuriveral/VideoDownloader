@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Dark theme (default) ── */
+[data-theme="dark"] {
+  --bg:         #09090b;
+  --surface:    #111113;
+  --surface2:   #18181b;
+  --surface3:   #1f1f24;
+  --border:     rgba(255, 255, 255, 0.07);
+  --border-hover: rgba(255, 255, 255, 0.14);
+  --text:       #f4f4f5;
+  --text-muted: #71717a;
+  --text-faint: #3f3f46;
+  --header-bg:  rgba(9, 9, 11, 0.75);
+  --card-bg:    rgba(255, 255, 255, 0.02);
+  --glow-a:     rgba(99, 102, 241, 0.15);
+  --glow-b:     rgba(14, 165, 233, 0.10);
+
+  /* Format button */
+  --fmt-bg:     #18181b;
+  --fmt-bg-sel: rgba(99, 102, 241, 0.10);
+  --fmt-border-sel: rgba(99, 102, 241, 0.55);
+  --fmt-text:   #e4e4e7;
+  --fmt-text-sel: #818cf8;
+  --fmt-size:   #52525b;
+
+  /* Progress */
+  --prog-track: #27272a;
+
+  /* Download button */
+  --dl-bg:      rgba(16, 185, 129, 0.08);
+  --dl-border:  rgba(16, 185, 129, 0.25);
+  --dl-bg-done: rgba(16, 185, 129, 0.10);
+  --dl-border-done: rgba(16, 185, 129, 0.35);
+  --dl-loading-bg: rgba(255, 255, 255, 0.03);
+  --dl-loading-border: rgba(255, 255, 255, 0.08);
+  --dl-loading-text: #71717a;
+
+  /* Input */
+  --inp-bg:     #18181b;
+  --inp-bg-focus: #1f1f24;
+}
+
+/* ── Light theme ── */
+[data-theme="light"] {
+  --bg:         #f8f8fb;
+  --surface:    #ffffff;
+  --surface2:   #f1f0f8;
+  --surface3:   #e8e7f2;
+  --border:     rgba(0, 0, 0, 0.08);
+  --border-hover: rgba(0, 0, 0, 0.16);
+  --text:       #18181b;
+  --text-muted: #71717a;
+  --text-faint: #a1a1aa;
+  --header-bg:  rgba(255, 255, 255, 0.80);
+  --card-bg:    #ffffff;
+  --glow-a:     rgba(99, 102, 241, 0.06);
+  --glow-b:     rgba(14, 165, 233, 0.04);
+
+  --fmt-bg:     #ffffff;
+  --fmt-bg-sel: #eef2ff;
+  --fmt-border-sel: rgba(99, 102, 241, 0.50);
+  --fmt-text:   #18181b;
+  --fmt-text-sel: #4f46e5;
+  --fmt-size:   #a1a1aa;
+
+  --prog-track: #e4e4e7;
+
+  --dl-bg:      #f0fdf4;
+  --dl-border:  rgba(16, 185, 129, 0.35);
+  --dl-bg-done: #dcfce7;
+  --dl-border-done: rgba(16, 185, 129, 0.45);
+  --dl-loading-bg: #f4f4f5;
+  --dl-loading-border: rgba(0, 0, 0, 0.09);
+  --dl-loading-text: #a1a1aa;
+
+  --inp-bg:     #ffffff;
+  --inp-bg-focus: #fafaff;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Keyframes ── */
+@keyframes spin      { to { transform: rotate(360deg); } }
+@keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(.7)} }
+@keyframes pop       { from{transform:scale(.96)} to{transform:scale(1)} }
+@keyframes fade-up   { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+@keyframes shimmer   { 0%,100%{opacity:0} 50%{opacity:1} }
