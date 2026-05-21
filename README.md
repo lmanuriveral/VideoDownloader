@@ -20,6 +20,8 @@ Aplicación full stack para descargar videos desde URLs compatibles con [yt-dlp]
 | Descargas | yt-dlp, ffmpeg                      |
 | Contenedores | Docker, Docker Compose          |
 
+Documentación detallada del stack (diagramas, versiones, arquitectura): **[STACK.md](./STACK.md)**.
+
 ## Estructura del proyecto
 
 ```
